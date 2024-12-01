@@ -1,0 +1,159 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+20:43:11.010 20:43:11.009 SlaveJvm execution parameter:  '-m localhost'
+20:43:11.017 20:43:11.017 SlaveJvm execution parameter:  '-n localhost-10-221114-20.43.10.285'
+20:43:11.018 20:43:11.018 SlaveJvm execution parameter:  '-l localhost-0'
+20:43:11.018 20:43:11.018 SlaveJvm execution parameter:  '-p 5570'
+20:43:11.019 20:43:11.019 SlaveJvm positional parameter: 'SlaveJvm'
+20:43:11.499 20:43:11.499 successfully connected to master localhost
+20:43:11.512 20:43:11.512 Connection to localhost using port 5570 successful
+20:43:12.207 20:43:12.197 ticks_per_second: 100
+20:43:12.364 20:43:12.363 execute(): ls -l /home/pramodh_billa/ext_pool
+
+Link to Run Definitions:         <A HREF="#_88558700">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1265210847">rd1 For loops: None</A>
+
+20:43:12.527 20:43:12.527 Configuration interpretation took 0.23 seconds
+20:43:12.904 20:43:12.900 Beginning of run setup
+20:43:12.905 20:43:12.900 **********************
+20:43:12.905 
+20:43:12.905 
+20:43:12.914 20:43:12.914 File '/var/log/messages' does not exist. Monitoring bypassed
+20:43:12.914 20:43:12.914 File '/var/log/messages.1' does not exist. Monitoring bypassed
+20:43:13.019 20:43:13.018 Deleting old file structure.
+20:43:13.020 20:43:13.020 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+20:43:13.022 20:43:13.022 Completed the creation of the directory list for /home/pramodh_billa/ext_pool: 12 directories.
+20:43:13.023 20:43:13.023 Generated 450 file names; total anchor size: 450m (471,859,200)
+20:43:13.036 20:43:13.036 Created flipflop bitmap for fsd1. 1 bitmaps for a total of 452 bits.
+20:43:13.038 20:43:13.038 Creating bitmap for unique blocks for fsd=fsd1. 1 bitmaps for a total of 450 bits, identifying 202 unique blocks
+20:43:13.039 20:43:13.039 Writing control file for anchor=/home/pramodh_billa/ext_pool at start of run.
+20:43:13.126 20:43:13.125 Completed control file for anchor=/home/pramodh_billa/ext_pool at start of run.  dirs: 12/0 files: 450/0 sizes: 450m/0/0/0
+20:43:13.139 20:43:13.139 Completed initializeFileAnchor for fsd1: 0.12
+20:43:13.220 20:43:13.219 Started 8 threads for fwd=format,fsd=fsd1
+20:43:13.220 20:43:13.219 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+20:43:13.220 20:43:13.219 Waiting for task synchronization
+20:43:13.220 20:43:13.219 task_wait_start_complete: FwgThread OpFormat /home/pramodh_billa/ext_pool 1
+20:43:13.422 20:43:13.420 Requesting full garbage collection
+20:43:13.422 20:43:13.421 GcTracker: cum:   1 intv:  1 ms:      59 mss:  0.00% Heap_MB max:   990 curr:   124 used:    21 free:   102 
+20:43:13.457 20:43:13.457 GcTracker: cum:   2 intv:  1 ms:      32 mss:  0.00% Heap_MB max:   990 curr:   124 used:    19 free:   105 
+20:43:13.457 20:43:13.457 task_wait_start_complete() end
+
+<a name="_88558700"></a><i><b>20:43:14.005 Starting RD=format_for_rd1</b></i>
+
+20:43:14.012 20:43:14.012 task_run_all(): 9 tasks
+20:43:14.181 20:43:14.180 Erasing Data Validation map: fsd1
+20:43:14.223 20:43:14.220 Message to master: anchor=/home/pramodh_billa/ext_pool mkdir complete.
+20:43:16.822 20:43:16.821 Message to master: anchor=/home/pramodh_billa/ext_pool create complete.
+20:43:16.927 20:43:16.927 
+20:43:16.928 20:43:16.928 Miscellaneous statistics:
+20:43:16.930 20:43:16.929 FILE_CREATES        Files created:                                  450
+20:43:16.930 20:43:16.930 DIRECTORY_CREATES   Directories created:                             12
+20:43:16.931 20:43:16.930 WRITE_OPENS         Files opened for write activity:                450
+20:43:16.932 20:43:16.931 DIR_EXISTS          Directory may not exist (yet):                    6
+20:43:16.933 20:43:16.932 FILE_CLOSES         Close requests:                                 450
+20:43:16.933 20:43:16.933 
+20:43:16.935 20:43:16.935 Dedup counters. Bytes written: 3.516g across: 1.578g (44.9%) on_sd: 0 (0.0%) dups: 1.938g (55.1%) resulting dedup=49.9% (2.00:1)
+20:43:16.945 20:43:16.944 Dedup options: 
+20:43:16.945 dedup_type:                            1
+20:43:16.945 dedup_ratio:                        2.00
+20:43:16.945 dedup_unit:                    1,048,576
+20:43:16.945 flipflop:                             no
+20:43:16.945 hot_dedup_sets:                        0
+20:43:16.945 hot_dedup_blocks:                      0
+20:43:16.945 dedup_sets_reqd:                      5%
+20:43:16.945 dedup_sets_used:                      22
+20:43:16.946 
+20:43:16.946 unique_blocks:                       202
+20:43:16.946 duplicate_blocks:                    248 (including 22 originals)
+20:43:16.946 dedup_pct:                         50.00
+20:43:16.946 dedup_adjusted:                    45.00
+20:43:16.946 total_size:                         450m
+20:43:16.946 unit_blocks:                         450
+20:43:16.946 
+20:43:16.946 Info only reliable if xfersize is multiple of dedupunit:
+20:43:16.946 uniques_written:                   1,616; expected 202; delta 1,414 
+20:43:16.946 duplicates_written:                1,984; expected 248; delta 1,736 
+20:43:16.946 Total writes:                      3,600; delta 3,150
+20:43:16.946 flipflops:                             0
+20:43:16.947 
+20:43:16.947 Dsim counts: Hash size:              224 (202 uniques + 22 sets)
+20:43:16.947 Dsim counts: Duplicates:             226
+20:43:16.947 Dsim counts: Ratio:                 2.01 (2.00893)
+20:43:16.947 
+20:43:16.976 20:43:16.976 Java Heap in MB. max:  989.875; current:  123.938; used:   25.825; free:   98.113
+20:43:16.977 20:43:16.977 Maximum native memory allocation:   16,777,216; Current allocation:   16,777,216
+20:43:17.131 20:43:17.131 Writing control file for anchor=/home/pramodh_billa/ext_pool at end of run.
+20:43:17.167 20:43:17.165 Completed control file for anchor=/home/pramodh_billa/ext_pool at end of run.  dirs: 12/12 files: 450/450 sizes: 450m/450m/450/450m
+20:43:17.167 20:43:17.165 End of run
+20:43:17.168 20:43:17.165 **********
+20:43:17.168 
+20:43:17.168 
+20:43:17.328 20:43:17.328 Beginning of run setup
+20:43:17.328 20:43:17.328 **********************
+20:43:17.328 
+20:43:17.328 
+20:43:17.465 20:43:17.465 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+20:43:17.466 20:43:17.466 Reading control file for anchor=/home/pramodh_billa/ext_pool
+20:43:17.467 20:43:17.467 Completed reading control file.
+20:43:17.467 20:43:17.467 Completed the creation of the directory list for /home/pramodh_billa/ext_pool: 12 directories.
+20:43:17.469 20:43:17.469 Generated 450 file names; total anchor size: 450m (471,859,200)
+20:43:17.469 20:43:17.469 No deletes and creates. Control file not cleared.
+20:43:17.472 20:43:17.471 During anchor creation for anchor=/home/pramodh_billa/ext_pool there were 12 directories and 450 files
+20:43:17.473 20:43:17.472 Completed initializeFileAnchor for fsd1: 0.01
+20:43:17.477 20:43:17.477 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+20:43:17.477 20:43:17.477 Started 2 FwgThreads for rd=rd1 For loops: None
+20:43:17.477 20:43:17.477 Waiting for task synchronization
+20:43:17.477 20:43:17.477 task_wait_start_complete: FwgWaiter 1
+20:43:17.680 20:43:17.678 Requesting full garbage collection
+20:43:17.680 20:43:17.679 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   990 curr:   124 used:    32 free:    92 
+20:43:17.713 20:43:17.712 GcTracker: cum:   3 intv:  1 ms:      31 mss:  0.00% Heap_MB max:   990 curr:   124 used:    23 free:   100 
+20:43:17.713 20:43:17.713 task_wait_start_complete() end
+
+<a name="_1265210847"></a><i><b>20:43:18.003 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+20:43:18.006 20:43:18.006 task_run_all(): 3 tasks
+20:43:48.205 20:43:48.203 
+20:43:48.205 20:43:48.203 Miscellaneous statistics:
+20:43:48.205 20:43:48.203 READ_OPENS          Files opened for read activity:              50,241
+20:43:48.205 20:43:48.203 FILE_BUSY           File busy:                                      111
+20:43:48.205 20:43:48.204 FILE_CLOSES         Close requests:                              50,241
+20:43:48.205 20:43:48.204 
+20:43:48.205 20:43:48.204 Dedup counters. Bytes written: 0 across: 0 (NaN%) on_sd: 0 (NaN%) dups: 0 (NaN%) resulting dedup=NaN% (NaN:1)
+20:43:48.205 20:43:48.204 Dedup options: 
+20:43:48.205 dedup_type:                            1
+20:43:48.205 dedup_ratio:                        2.00
+20:43:48.205 dedup_unit:                    1,048,576
+20:43:48.205 flipflop:                             no
+20:43:48.205 hot_dedup_sets:                        0
+20:43:48.205 hot_dedup_blocks:                      0
+20:43:48.205 dedup_sets_reqd:                      5%
+20:43:48.205 dedup_sets_used:                      22
+20:43:48.205 
+20:43:48.205 unique_blocks:                       202
+20:43:48.205 duplicate_blocks:                    248 (including 22 originals)
+20:43:48.205 dedup_pct:                         50.00
+20:43:48.205 dedup_adjusted:                    45.00
+20:43:48.205 total_size:                         450m
+20:43:48.205 unit_blocks:                         450
+20:43:48.205 
+20:43:48.205 Info only reliable if xfersize is multiple of dedupunit:
+20:43:48.205 uniques_written:                       0; expected 202; delta -202 
+20:43:48.205 duplicates_written:                    0; expected 248; delta -248 
+20:43:48.205 Total writes:                          0; delta -450
+20:43:48.205 flipflops:                             0
+20:43:48.205 
+20:43:48.205 Dsim counts: Hash size:              224 (202 uniques + 22 sets)
+20:43:48.205 Dsim counts: Duplicates:             226
+20:43:48.205 Dsim counts: Ratio:                 2.01 (2.00893)
+20:43:48.205 
+20:43:48.205 20:43:48.204 Java Heap in MB. max:  989.875; current:  123.875; used:   33.791; free:   90.084
+20:43:48.205 20:43:48.205 Maximum native memory allocation:   20,971,520; Current allocation:    4,194,304
+20:43:48.208 20:43:48.208 Writing control file for anchor=/home/pramodh_billa/ext_pool at end of run.
+20:43:48.224 20:43:48.223 Completed control file for anchor=/home/pramodh_billa/ext_pool at end of run.  dirs: 12/12 files: 450/450 sizes: 450m/450m/450/450m
+20:43:48.225 20:43:48.224 End of run
+20:43:48.225 20:43:48.224 **********
+20:43:48.225 
+20:43:48.225 
+20:43:48.801 20:43:48.798 Master is requesting slave shutdown
+20:43:48.801 20:43:48.798 Java Heap in MB. max:  989.875; current:  123.875; used:   35.060; free:   88.815

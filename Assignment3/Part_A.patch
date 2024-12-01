@@ -1,0 +1,67 @@
+diff -ruN xv6-public-original/sysproc.c xv6-public-A/sysproc.c
+--- xv6-public-original/sysproc.c	2022-08-10 02:14:12.481600000 +0530
++++ xv6-public-A/sysproc.c	2022-10-18 10:10:44.034765351 +0530
+@@ -51,8 +51,10 @@
+   if(argint(0, &n) < 0)
+     return -1;
+   addr = myproc()->sz;
+-  if(growproc(n) < 0)
+-    return -1;
++  myproc()->sz += n;
++  
++  //  if(growproc(n) < 0)
++  //    return -1;
+   return addr;
+ }
+ 
+diff -ruN xv6-public-original/trap.c xv6-public-A/trap.c
+--- xv6-public-original/trap.c	2022-08-10 02:14:12.481600000 +0530
++++ xv6-public-A/trap.c	2022-10-18 10:31:59.658770168 +0530
+@@ -8,6 +8,8 @@
+ #include "traps.h"
+ #include "spinlock.h"
+ 
++int mappages(pde_t *pgdir, void *va, uint size, uint pa, int perm);
++
+ // Interrupt descriptor table (shared by all CPUs).
+ struct gatedesc idt[256];
+ extern uint vectors[];  // in vectors.S: array of 256 entry pointers
+@@ -77,7 +79,25 @@
+             cpuid(), tf->cs, tf->eip);
+     lapiceoi();
+     break;
++  case T_PGFLT:
++    {
++      char *mem;
++      mem = kalloc();
++      if (mem == 0)
++      {
++        cprintf("Out of Memory.\n");
++      }
++      else
++      {
++        memset(mem, 0, PGSIZE);
++
++        // creating page table entry
++        uint a = PGROUNDDOWN(rcr2());
++        mappages(myproc()->pgdir, (char *)a, PGSIZE, V2P(mem), PTE_W | PTE_U);
++      }
++    }
+ 
++    break;
+   //PAGEBREAK: 13
+   default:
+     if(myproc() == 0 || (tf->cs&3) == 0){
+diff -ruN xv6-public-original/vm.c xv6-public-A/vm.c
+--- xv6-public-original/vm.c	2022-08-10 02:14:12.481600000 +0530
++++ xv6-public-A/vm.c	2022-10-18 10:31:50.230770132 +0530
+@@ -57,7 +57,8 @@
+ // Create PTEs for virtual addresses starting at va that refer to
+ // physical addresses starting at pa. va and size might not
+ // be page-aligned.
+-static int
++// static int
++int
+ mappages(pde_t *pgdir, void *va, uint size, uint pa, int perm)
+ {
+   char *a, *last;

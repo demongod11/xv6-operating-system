@@ -1,0 +1,110 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+20:56:24.206 input argument scanned: '-fzfs_large'
+20:56:24.207 java.vendor                   Ubuntu
+20:56:24.207 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+20:56:24.207 java.vm.specification.version 11
+20:56:24.207 java.vm.version               11.0.17+8-post-Ubuntu-1ubuntu220.04
+20:56:24.208 java.vm.vendor                Ubuntu
+20:56:24.208 java.specification.version    11
+20:56:24.208 java.class.version            55.0
+20:56:24.208 user.name                     root
+20:56:24.208 user.dir                      /home/pramodh_billa/Documents/Assign/vdbench
+20:56:24.208 java.io.tmpdir                /tmp
+20:56:24.208 java.class.path               ./:./classes:./vdbench.jar
+20:56:24.208 os.name                       Linux
+20:56:24.208 os.arch                       amd64
+20:56:24.208 os.version                    5.15.0-52-generic
+20:56:24.208 sun.arch.data.model           64
+20:56:24.210 Flushing all reports
+20:56:24.233 Creating anchor for /zfs_pool,fsd=fsd1
+20:56:24.278 rd1 fsd to format: fsd1
+20:56:24.278 rd1 format on host: localhost
+20:56:24.280 Anchor size: anchor=/zfs_pool: dirs:            0; files:            2; bytes:     2.000g (2,147,483,648)
+20:56:24.357 Starting slave: /home/pramodh_billa/Documents/Assign/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-20.56.24.132 -l localhost-0 -p 5570   
+20:56:24.917 Slave localhost-0 (pid   4355) connected to master 4331
+20:56:24.957 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_1211888640">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_564160838">rd1 For loops: None</A>
+
+20:56:25.362 Flushing all reports
+20:56:25.365 slv=localhost-0 fwd=format fsd=fsd1 anchor=/zfs_pool threads= 8 skew= 0.00 operation=read 
+20:56:25.447 Waiting for synchronization of all slaves
+20:56:26.055 Synchronization of all slaves complete
+
+<a name="_1211888640"></a><i><b>20:56:27.008 Starting RD=format_for_rd1</b></i>
+
+20:56:27.491 localhost-0: anchor=/zfs_pool mkdir complete.
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+20:56:28.299            1 1711.0  0.126  66.3 36.1   0.0    0.0  0.000 1711.0  0.126  0.00 213.8 213.88  131072   1.0  0.078  12.0  0.255   0.0  0.000   2.0  2.883   0.0  0.000 450.0  0.252
+20:56:29.028            2 1140.0  2.390  97.7 67.8   0.0    0.0  0.000 1140.0  2.390  0.00 142.5 142.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:30.032            3  504.0  1.025  89.2 85.1   0.0    0.0  0.000  504.0  1.025  0.00 63.00  63.00  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:31.051            4 1126.0  3.094  98.9 89.8   0.0    0.0  0.000 1126.0  3.094  0.00 140.7 140.75  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:32.008            5  535.0  1.411  91.4 75.3   0.0    0.0  0.000  535.0  1.411  0.00 66.88  66.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:33.009            6 1387.0  2.327  94.3 87.3   0.0    0.0  0.000 1387.0  2.327  0.00 173.3 173.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:34.008            7  211.0  1.403 100.0 95.1   0.0    0.0  0.000  211.0  1.403  0.00 26.38  26.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:35.028            8 1532.0  2.288  96.4 79.5   0.0    0.0  0.000 1532.0  2.288  0.00 191.5 191.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:36.024            9    0.0  0.000  98.9 92.0   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:37.041           10 1467.0  2.121  98.9 93.1   0.0    0.0  0.000 1467.0  2.121  0.00 183.3 183.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:38.017           11 1404.0  1.995  97.7 94.2   0.0    0.0  0.000 1404.0  1.995  0.00 175.5 175.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:39.016           12    0.0  0.000  98.9 96.7   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:40.010           13 1346.0  2.040  96.6 91.0   0.0    0.0  0.000 1346.0  2.040  0.00 168.2 168.25  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:41.115           14 1290.0  2.353  98.8 67.0   0.0    0.0  0.000 1290.0  2.353  0.00 161.2 161.25  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:42.014           15    0.0  0.000  94.6 79.3   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:43.014           16 1235.0  2.463 100.0 80.7   0.0    0.0  0.000 1235.0  2.463  0.00 154.3 154.38  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:44.005           17 1185.0  2.220  96.6 94.3   0.0    0.0  0.000 1185.0  2.220  0.00 148.1 148.12  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:44.617 localhost-0: anchor=/zfs_pool create complete.
+20:56:45.013           18  311.0  6.603  62.8 56.3   0.0    0.0  0.000  311.0  6.603  0.00 38.88  38.88  131072   0.0  0.000   0.0  0.000   2.0  17115   0.0  0.000   2.0  0.049   0.0  0.000
+20:56:45.022     avg_2-18  863.1  2.312  94.7 83.8   0.0    0.0  0.000  863.1  2.312  0.00 107.8 107.89  131072   0.0  0.000   0.0  0.000   0.1  17115   0.0  0.000   0.1  0.049   0.0  0.000
+20:56:45.037     std_2-18  580.1 52.821                                 580.1 52.821                                                        0.5  2.966                0.5  0.041             
+20:56:45.044     max_2-18 1532.0 1651.7                                1532.0 1651.7                                   0.078        1.738   2.0  17117        3.699   2.0  0.078       10.567
+20:56:45.123 *
+20:56:45.128 ********************************************************************
+20:56:45.128 * Warning for host=localhost: average processor utilization 94.7%  *
+20:56:45.129 * Any processor utilization over 80% could mean that your system   *
+20:56:45.129 * does not have enough cycles to run the highest rate possible.    *
+20:56:45.129 ********************************************************************
+20:56:45.129 *
+20:56:45.245 
+20:56:45.245 Miscellaneous statistics:
+20:56:45.245 (These statistics do not include activity between the last reported interval and shutdown.)
+20:56:45.245 FILE_CREATES        Files created:                                    2          0/sec
+20:56:45.245 DIRECTORY_CREATES   Directories created:                              1          0/sec
+20:56:45.246 FILE_DELETES        Files deleted:                                  450         25/sec
+20:56:45.246 DIRECTORY_DELETES   Directories deleted:                             12          0/sec
+20:56:45.246 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+20:56:45.246 DIR_EXISTS          Directory may not exist (yet):                    3          0/sec
+20:56:45.246 FILE_CLOSES         Close requests:                                   2          0/sec
+20:56:45.246 
+20:56:45.246 Flushing all reports
+20:56:45.247 Java Heap in MB. max:  494.938; current:   61.875; used:   25.561; free:   36.314
+20:56:45.287 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/zfs_pool threads= 2 skew= 0.00 operation=create 
+20:56:45.295 Waiting for synchronization of all slaves
+20:56:45.718 Synchronization of all slaves complete
+
+<a name="_564160838"></a><i><b>20:56:46.004 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+20:56:46.407 
+20:56:46.407 Message from slave localhost-0: 
+20:56:46.407 Anchor: /zfs_pool
+20:56:46.407 Vdbench is trying to create a new file, but all files already exist, 
+20:56:46.407 and no threads are currently active deleting files
+20:56:46.407 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+20:56:46.407 
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+20:56:47.028            1    0.0  0.000  13.5 2.35   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+20:56:47.049      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+20:56:47.050      std_2-1                                                                                                                                                                    
+20:56:47.050      max_2-1                                                                                                                                                                    
+20:56:47.180 Miscellaneous statistics: All counters are zero
+20:56:47.180 Flushing all reports
+20:56:47.181 Java Heap in MB. max:  494.938; current:   62.000; used:   20.375; free:   41.625
+20:56:47.204 Ending Reporter
+20:56:47.737 Vdbench execution completed successfully. Output directory: /home/pramodh_billa/Documents/Assign/vdbench/output 
+
+20:56:48.749 Java Heap in MB. max:  494.938; current:   62.000; used:   17.422; free:   44.578
